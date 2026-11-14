@@ -1,0 +1,7 @@
+# Professor-ready project summary
+
+I developed an experimental two-axis gimbal stabilization prototype using an Arduino Uno R3, two MPU6050 inertial sensors, and two MG996R servomotors. The objective is to maintain a requested platform roll and pitch relative to gravity while the supporting base changes orientation. The mechanical arrangement places the pitch stage inside the roll mechanism, making rotation order and coupled geometry important to the control design.
+
+The firmware estimates base and platform orientation with rotation matrices, integrating bias-corrected gyroscope measurements and applying accelerometer-based gravity correction. A geometric inverse-kinematics solver computes joint targets for the nested mechanism. Feedforward compensation is combined with platform attitude feedback and angular-rate damping, with command slew limits, operating modes, and sensor-fault recovery logic.
+
+The supplied bench demonstrations show manual movement of the assembled mechanism and relative motion of the platform and frame. They provide qualitative prototype evidence, but do not establish numerical stabilization accuracy or combined-axis tracking performance. The unchanged final sketch compiles for Arduino Uno. Further work should calibrate sensor alignment and servo response, document the power system, and evaluate tracking and recovery using synchronized telemetry and an independent angular reference.

@@ -1,0 +1,18 @@
+[
+  {
+    "source_name": "WhatsApp Video 2026-11-14 at 13.30.04.mp4",
+    "repository_path": "media/demo-02.mp4",
+    "bytes": 3785887,
+    "sha256": "c9c3ab287b2c0f228294fa2ed95a8e714de1d4e4dd94aa501ba83c7e96cee889",
+    "still": "media/demo-02-still.png",
+    "still_time_seconds": 0.5
+  },
+  {
+    "source_name": "WhatsApp Video 2026-11-14 at 13.10.17.mp4",
+    "repository_path": "media/demo-01.mp4",
+    "bytes": 2902424,
+    "sha256": "9e976133eed74494468b288fb0a50b355eaea750b05894c9f35099c73f506988",
+    "still": "media/demo-01-still.png",
+    "still_time_seconds": 1.0
+  }
+]

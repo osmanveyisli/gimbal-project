@@ -1,0 +1,10 @@
+# Local builds and machine-specific files
+build/
+.arduino/
+*.elf
+*.hex
+*.o
+*.a
+.DS_Store
+.env
+.env.*

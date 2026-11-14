@@ -1,0 +1,37 @@
+Repository QA — 2026-11-14
+
+PASS: authoritative .ino matches uploaded source byte for byte.
+PASS: SHA-256 051eebb4c735de2965e74301c238f0f4300ab94406b3457afe61fcfbf4e1b39d.
+PASS: unchanged sketch compiled and linked for arduino:avr:uno.
+PASS: compiler output retained in compile-uno.log; four core-library warnings disclosed.
+PASS: 75 relative Markdown link/image references resolve locally.
+PASS: four image references point to valid decoded PNG files.
+PASS: README.md and README.az.md link to each other.
+PASS: Markdown fences balanced; tables parsed with markdown-it-py.
+PASS: all 19 display equations parsed by KaTeX 0.16.
+PASS: Mermaid flowchart parsed and rendered to SVG with Mermaid 11.
+PASS: both READMEs rendered in headless Chromium at 390px and 1280px widths.
+PASS: images loaded and document-level horizontal overflow absent at both widths.
+PASS: mobile screenshots visually inspected; code/table/math overflow is locally scrollable.
+PASS: video files match originals by SHA-256; manifest records names, sizes and frame times.
+PASS: media provenance and pending people-permission status explicitly documented.
+PASS: professor summary contains 183 words.
+PASS: known credential/private-key pattern scan found no matches in repository text.
+PASS: git staged whitespace check passed.
+
+Additional mathematical sanity check (not a hardware test):
+Original solver and matrix helpers were extracted unchanged into a scratch C++ harness.
+A host build tested 10,000 seeded cases (C rand seed 42), base Euler roll/pitch
+in +/-60 degrees and requested roll/pitch in +/-30 degrees. Of these,
+9,822 were accepted and 178 rejected by the source gates. Accepted solutions
+were independently checked by forward reconstruction Rx(qr) Ry(qp) h = g.
+Maximum vector residual was 2.4755667e-7. This checks consistency of the
+upright ideal-model equations in the sampled range, not physical geometry,
+servo calibration, boundary completeness, AVR floating-point behavior or stability.
+
+LIMIT: local rendering uses GitHub-like Markdown styling, not a live GitHub page.
+LIMIT: external repository/media URLs cannot be verified before remote publication.
+LIMIT: no board upload, physical tests or quantitative stabilization measurements.
+LIMIT: standalone photographs were visible in chat but original files unavailable.
+BLOCKED: GitHub repository creation denied for missing CreateRepository permission.
+PENDING: owner confirmation that everyone in the media may be included before upload.
